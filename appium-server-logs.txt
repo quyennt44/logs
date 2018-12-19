@@ -1,0 +1,207 @@
+[info] [35m[Appium][39m Welcome to Appium v1.10.0
+[info] [35m[Appium][39m Non-default server args:
+[info] [35m[Appium][39m   address: 127.0.0.1
+[info] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4723[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/sessions[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getSessions() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getSessions() result: []
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/sessions [39m[32m200[39m [90m6 ms - 40[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1545212823401 (16:47:03 GMT+0700 (SE Asia Standard Time))
+[info] [35m[Appium][39m Creating new AndroidDriver (v4.7.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity: host.exp.exponent.LauncherActivity
+[info] [35m[Appium][39m   appPackage: host.exp.exponent
+[info] [35m[Appium][39m   deviceName: Samsung Galaxy J3
+[info] [35m[Appium][39m   fullReset: false
+[info] [35m[Appium][39m   noReset: true
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 5.1.1
+[info] [35m[Appium][39m   udid: 42006fd2cc118400
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity":"host.exp.ex...
+[warn] [35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: d5bbbb32-fe85-4fa0-b581-9a53cad104c0[info] [35m[AndroidDriver][39m Java version is: 10.0.2
+[info] [35m[ADB][39m Checking whether adb is present
+[info] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Teko\AppData\Local\Android\android-sdk' (newest first):
+[info] [35m[ADB][39m     C:/Users/Teko/AppData/Local/Android/android-sdk/build-tools/28.0.3
+[info] [35m[ADB][39m Using adb.exe from C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Using device: 42006fd2cc118400
+[debug] [35m[ADB][39m Setting device id to 42006fd2cc118400
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run host.exp.exponent directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell pm list packages host.exp.exponent'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 wait-for-device'[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys package io.appium.settings'[info] [35m[ADB][39m Checking whether aapt is present
+[info] [35m[ADB][39m Using aapt.exe from C:\Users\Teko\AppData\Local\Android\android-sdk\build-tools\28.0.3\aapt.exe
+[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.11.0' >= '2.11.0')
+[debug] [35m[ADB][39m There is no need to install/upgrade 'C:\Program Files (x86)\Appium\resources\app\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell ps'[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell settings put secure mock_location 1'[warn] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[warn] [35m[AndroidDriver][39m Got language: 'undefined' and country: 'undefined'
+[debug] [35m[Logcat][39m Starting logcat capture[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1.1
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell wm size'[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.product.model'[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-J320G
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 push 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","42006fd2cc118400","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","host.exp.exponent","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected[debug] [35m[AndroidDriver][39m Screen is locked, trying to unlock
+[warn] [35m[AndroidDriver][39m Using app unlock, this is going to be deprecated!
+[info] [35m[AndroidDriver][39m Unlocking screen
+[info] [35m[AndroidDriver][39m Launching .Unlock
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000'[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell am start -W -n host.exp.exponent/host.exp.exponent.LauncherActivity -S'[info] [35m[Appium][39m New AndroidDriver session created successfully, session d5bbbb32-fe85-4fa0-b581-9a53cad104c0 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1545212832765 (16:47:12 GMT+0700 (SE Asia Standard Time))
+[debug] [35m[MJSONWP (d5bbbb32)][39m Cached the protocol value 'MJSONWP' for the new session d5bbbb32-fe85-4fa0-b581-9a53cad104c0
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","deviceName":"Samsung Galaxy J3","fullReset":false,"noReset":true,"platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true},"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","deviceName":"42006fd2cc118400","fullReset":false,"noReset":true,"platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true,"deviceUDID":"42006fd2cc118400","deviceScreenSize":"720x1280","deviceModel":"SM-J320G","deviceManufacturer":"samsung"}
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m9367 ms - 956[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/context[39m
+[info] [35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.setContext() result: null
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/context [39m[32m200[39m [90m108 ms - 76[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getPageSource() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: source[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getPageSource() result: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"host.exp.exponent\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"host.exp.exponent\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"host.exp.exponent\" content-desc=\"\" checkable=\"false\" checked=\"fal...
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source [39m[32m200[39m [90m152 ms - 3947[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getScreenshot() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[ADB][39m Device API level: 22[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys input'[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtIAAAUCCAYAAAAn8xQLAABVlklEQVR4AezBy45caXbf7d9/rXfviMjIDGYmmSTrKJbKUEvwxIAHNmQbMLrvwSMDgg+AAbcBj3wDvgNfgO9CGmhgGwYMAZ56IgjdLXd1i8Umi2Qyz3HY+12f9iDwBdLJJIOV7AO0nkf/5b/8l1gsFrg7KaWUUkoppZv1fc9oNOI//sf/KP5WWa1WrFYraq2klFJKKaWUbtb3PWbGWmnbloG7k1JKKaWUUrpZ3/e0bctacXfMDDMjpZRSSimldLOIwN1ZK5IwM8yMlFJKKaWU0s0iAkmsFXfH3XF3UkoppZRSSm/n7qwVd8fdcXdSSimllFJKb+furBUzw90xM1JKKaWUUkpvZ2asFXen1oqZkVJKKaWUUrqZJNydteLuRASSSCmllFJKH+7evXu0bctN+r7n9evXpN9dZoa7s1b+FrVW3J2IIKWUUvp1k8RNIoKUfpeMx2NGoxE36fsedyf97qq14u6sFXfH3XF3IoKUUkrpY5KEmeHuNE2Du1NKwd3Z1Pc9XdfRdR2r1YpaK7VWIoK7NhqNaNsWM+NtIgJJrC2XS66urvhd07Yt7s7V1RXp7pkZZsZNIgJ3J/3ukoS7s1bMjFIKZsYgIhhIIqWU0u+e8XjMbDaj73vevHlD13W8j1IK+/v7uDsnJyfM53PukiTatqVtW9q2pWkaJPE+aq2sViuWyyXL5ZLVakVEcBd2dnZ48uQJ9+7do5TC+zo/P+dnP/sZp6en/K5o25bZbMZyuWS5XJI+3Gw2o2kariulYGbcRBIPHz7kur7vefPmDeluSCIiGEjiNhHBQBIRgSRuEhFIotZKKYW18reICNydQUSwrYhAEgNJDEopDLquYxtmRkQQEaSU0u+KiOC3wXQ65csvv2Q2m1Fr5ZtvvuHFixe8j4cPH/J7v/d7mBmnp6d88803XF5echeapmE6nVJKoZTCttydpmmYTCb0fc9yueTy8pKu6/i+...
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot [39m[32m200[39m [90m1355 ms - 29366[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getWindowSize() with args: ["current","d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getWindowSize() result: {"height":1280,"width":720}
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size [39m[32m200[39m [90m14 ms - 99[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getPageSource() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: source
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Command returned error:org.w3c.dom.DOMException:
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 13 to UnknownError
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":13,"value":""}
+[debug] [35m[MJSONWP (d5bbbb32)][39m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command.
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at errorFromMJSONWPStatusCode (C:\Program Files (x86)\Appium\resources\app\node_modules\appium-base-driver\lib\protocol\errors.js:789:10)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.socketClient.on.data (C:\Program Files (x86)\Appium\resources\app\node_modules\appium-android-driver\lib\bootstrap.js:139:18)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.emit (events.js:182:13)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at addChunk (_stream_readable.js:279:12)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at readableAddChunk (_stream_readable.js:260:13)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.Readable.push (_stream_readable.js:219:10)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at TCP.onread (net.js:636:20)
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source [39m[31m500[39m [90m105 ms - 154[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getScreenshot() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[ADB][39m Device API level: 22[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys input'[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtIAAAUCCAYAAAAn8xQLAAHcJUlEQVR4AezByXJd53n+7d/9PGv3G8AmGqJhb1KU2IRWLMlWmpH+00xSaatyAKmyM8xJpCqTnIszyyTlJI5LiS3ZEmlKpEQSIIm+x+7Xer+swa7ahQAgQAGy+OW9Lv393/996Ha7uDtRFEVRFEVRFB0sTVOKxSL/+I//KP5H0u/36ff7hBCIoiiKoiiKouhgaZpiZgwkhUKBnJkRRVEURVEURdHB3J1CocBAYmaYGWZGFEVRFEVRFEWHMzMGEklIwsyIoiiKoiiKouhgIQQkMZCYGe6OmRFFURRFURRF0eHMjIHE3cmyDDMjiqIoiqIoiqLDuTsDiSTMDDMjiqIoiqIoiqLDSWIgcXdCCEgiiqIoiqIoiqKDScLdGUjMDHdHElEURVEURdHrm5ycpFwuc5B+v8/i4iLRmyuEgJkxkLg7IQTMjBACURRFUfRtk8RBQghE0ZukUqlQrVY5SL/fx8yI3lwhBNydgcTdybIMMyOKoiiKzpok3J0kSSiVSiRJQrFYxN2RRC6EQL/fp9fr0e126Xa7pGlKmqaEEDhtlUqFSqWCmXGYEAKSGGi32+zu7vKmKZfLJEnC7u4u0ekzMyRxEEm4O9GbK8syzIyBRBLujpmRCyGQk0QURVH05qnVakxOTtLv91laWqLX63EchUKB6elpkiRhZWWFvb09TpOZUS6XKZfLVCoVSqUSkjiONE3pdDq0221arRadTocQAqdhdHSU3/u932NqaopCocBxbWxs8Ktf/Yq1tTXeFOVymcnJSdrtNs1mk+j1TU5OUiwW2a9YLGJmHKRQKHDx4kX2S9OUpaUlotMhiRACOUkcJYRAThIhBCRxkBACkpCEuzOQ/A9yZkYuhMBJhRCQRE4SkigWi4QQ6Ha7nIS7k2UZIQSiKIreFCEEvgsajQZ37txhcnKSNE357LPPePLkCcdx+fJl7t69i7uzurrKZ599xtbWFqehXC4z...
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot [39m[32m200[39m [90m1447 ms - 162674[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getWindowSize() with args: ["current","d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getWindowSize() result: {"height":1280,"width":720}
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size [39m[32m200[39m [90m8 ms - 99[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getPageSource() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: source
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Command returned error:org.w3c.dom.DOMException:
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP][39m Matched JSONWP error code 13 to UnknownError
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":13,"value":""}
+[debug] [35m[MJSONWP (d5bbbb32)][39m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command.
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at errorFromMJSONWPStatusCode (C:\Program Files (x86)\Appium\resources\app\node_modules\appium-base-driver\lib\protocol\errors.js:789:10)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.socketClient.on.data (C:\Program Files (x86)\Appium\resources\app\node_modules\appium-android-driver\lib\bootstrap.js:139:18)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.emit (events.js:182:13)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at addChunk (_stream_readable.js:279:12)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at readableAddChunk (_stream_readable.js:260:13)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at Socket.Readable.push (_stream_readable.js:219:10)
+[debug] [35m[MJSONWP (d5bbbb32)][39m     at TCP.onread (net.js:636:20)
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/source [39m[31m500[39m [90m74 ms - 154[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getScreenshot() with args: ["d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[ADB][39m Device API level: 22[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell dumpsys input'[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtIAAAUCCAYAAAAn8xQLAAHcJUlEQVR4AezByXJd53n+7d/9PGv3G8AmGqJhb1KU2IRWLMlWmpH+00xSaatyAKmyM8xJpCqTnIszyyTlJI5LiS3ZEmlKpEQSIIm+x+7Xer+swa7ahQAgQAGy+OW9Lv393/996Ha7uDtRFEVRFEVRFB0sTVOKxSL/+I//KP5H0u/36ff7hBCIoiiKoiiKouhgaZpiZgwkhUKBnJkRRVEURVEURdHB3J1CocBAYmaYGWZGFEVRFEVRFEWHMzMGEklIwsyIoiiKoiiKouhgIQQkMZCYGe6OmRFFURRFURRF0eHMjIHE3cmyDDMjiqIoiqIoiqLDuTsDiSTMDDMjiqIoiqIoiqLDSWIgcXdCCEgiiqIoiqIoiqKDScLdGUjMDHdHElEURVEURdHrm5ycpFwuc5B+v8/i4iLRmyuEgJkxkLg7IQTMjBACURRFUfRtk8RBQghE0ZukUqlQrVY5SL/fx8yI3lwhBNydgcTdybIMMyOKoiiKzpok3J0kSSiVSiRJQrFYxN2RRC6EQL/fp9fr0e126Xa7pGlKmqaEEDhtlUqFSqWCmXGYEAKSGGi32+zu7vKmKZfLJEnC7u4u0ekzMyRxEEm4O9GbK8syzIyBRBLujpmRCyGQk0QURVH05qnVakxOTtLv91laWqLX63EchUKB6elpkiRhZWWFvb09TpOZUS6XKZfLVCoVSqUSkjiONE3pdDq0221arRadTocQAqdhdHSU3/u932NqaopCocBxbWxs8Ktf/Yq1tTXeFOVymcnJSdrtNs1mk+j1TU5OUiwW2a9YLGJmHKRQKHDx4kX2S9OUpaUlotMhiRACOUkcJYRAThIhBCRxkBACkpCEuzOQ/A9yZkYuhMBJhRCQRE4SkigWi4QQ6Ha7nIS7k2UZIQSiKIreFCEEvgsajQZ37txhcnKSNE357LPPePLkCcdx+fJl7t69i7uzurrKZ599xtbWFqehXC4z...
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/screenshot [39m[32m200[39m [90m1387 ms - 162674[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d5bbbb32)][39m Calling AppiumDriver.getWindowSize() with args: ["current","d5bbbb32-fe85-4fa0-b581-9a53cad104c0"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (d5bbbb32)][39m Responding to client with driver.getWindowSize() result: {"height":1280,"width":720}
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/session/d5bbbb32-fe85-4fa0-b581-9a53cad104c0/window/current/size [39m[32m200[39m [90m7 ms - 99[39m
+[info] [35m[HTTP][39m [90m[39m
