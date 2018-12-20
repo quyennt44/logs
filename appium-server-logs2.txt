@@ -1,0 +1,81 @@
+[info] [35m[Appium][39m Welcome to Appium v1.10.0
+[info] [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/sessions[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getSessions() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getSessions() result: []
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/sessions [39m[32m200[39m [90m5 ms - 40[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1545277117767 (10:38:37 GMT+0700 (SE Asia Standard Time))
+[info] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.24.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity: host.exp.exponent.LauncherActivity
+[info] [35m[Appium][39m   appPackage: host.exp.exponent
+[info] [35m[Appium][39m   automationName: uiautomator2
+[info] [35m[Appium][39m   deviceName: Samsung Galaxy J3
+[info] [35m[Appium][39m   fullReset: false
+[info] [35m[Appium][39m   noReset: true
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 5.1.1
+[info] [35m[Appium][39m   udid: 42006fd2cc118400
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity":"host.exp.ex...
+[warn] [35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: ac09dad7-63de-4a65-bc2b-3fc638390d4d[info] [35m[AndroidDriver][39m Java version is: 10.0.2
+[info] [35m[ADB][39m Checking whether adb is present
+[info] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Teko\AppData\Local\Android\android-sdk' (newest first):
+[info] [35m[ADB][39m     C:/Users/Teko/AppData/Local/Android/android-sdk/build-tools/28.0.3
+[info] [35m[ADB][39m Using adb.exe from C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Using device: 42006fd2cc118400
+[debug] [35m[ADB][39m Setting device id to 42006fd2cc118400
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.build.version.sdk'[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell ps'
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell am force-stop io.appium.uiautomator2.server'[debug] [35m[ADB][39m Checking app cert for C:\Program Files (x86)\Appium\resources\app\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v2.8.0.apk
+[info] [35m[ADB][39m Using apksigner.bat from C:\Users\Teko\AppData\Local\Android\android-sdk\build-tools\28.0.3\apksigner.bat
+[debug] [35m[ADB][39m Starting 'C:\Users\Teko\AppData\Local\Android\android-sdk\build-tools\28.0.3\apksigner.bat' with args '["verify","--print-certs","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v2.8.0.apk"]'[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m-[39m [90m- ms - -[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","fullReset":"false","noReset":"true","platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1545277717788 (10:48:37 GMT+0700 (SE Asia Standard Time))
+[info] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.24.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity: host.exp.exponent.LauncherActivity
+[info] [35m[Appium][39m   appPackage: host.exp.exponent
+[info] [35m[Appium][39m   automationName: uiautomator2
+[info] [35m[Appium][39m   deviceName: Samsung Galaxy J3
+[info] [35m[Appium][39m   fullReset: false
+[info] [35m[Appium][39m   noReset: true
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 5.1.1
+[info] [35m[Appium][39m   udid: 42006fd2cc118400
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity":"host.exp.ex...
+[warn] [35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: 5b78ebce-fc7f-4b1a-83e3-8ee5924d98ca[info] [35m[AndroidDriver][39m Java version is: 10.0.2
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Using device: 42006fd2cc118400
+[debug] [35m[ADB][39m Setting device id to 42006fd2cc118400
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell ps'[debug] [35m[ADB][39m Running 'C:\Users\Teko\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 42006fd2cc118400 shell am force-stop io.appium.uiautomator2.server'[debug] [35m[ADB][39m Checking app cert for C:\Program Files (x86)\Appium\resources\app\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v2.8.0.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Teko\AppData\Local\Android\android-sdk\build-tools\28.0.3\apksigner.bat' with args '["verify","--print-certs","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v2.8.0.apk"]'
