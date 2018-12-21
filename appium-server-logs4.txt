@@ -1,0 +1,100 @@
+[info] [35m[Appium][39m Welcome to Appium v1.10.0
+[info] [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/sessions[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getSessions() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getSessions() result: []
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/sessions [39m[32m200[39m [90m5 ms - 40[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","noReset":true,"platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity":"host.exp.exponent.LauncherActivity","appPackage":"host.exp.exponent","automationName":"uiautomator2","deviceName":"Samsung Galaxy J3","noReset":true,"platformName":"Android","platformVersion":"5.1.1","udid":"42006fd2cc118400","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1545359131492 (09:25:31 GMT+0700 (+07))
+[info] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.24.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity: host.exp.exponent.LauncherActivity
+[info] [35m[Appium][39m   appPackage: host.exp.exponent
+[info] [35m[Appium][39m   automationName: uiautomator2
+[info] [35m[Appium][39m   deviceName: Samsung Galaxy J3
+[info] [35m[Appium][39m   noReset: true
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 5.1.1
+[info] [35m[Appium][39m   udid: 42006fd2cc118400
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity":"host.exp.ex...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: 84d70cd4-8061-49de-90b2-c6264606856b
+[info] [35m[AndroidDriver][39m Java version is: 1.8.0_191
+[info] [35m[ADB][39m Checking whether adb is present
+[info] [35m[ADB][39m Found 1 'build-tools' folders under '/home/teko/Android/Sdk' (newest first):
+[info] [35m[ADB][39m     /home/teko/Android/Sdk/build-tools/28.0.3
+[info] [35m[ADB][39m Using adb from /home/teko/Android/Sdk/platform-tools/adb
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Using device: 42006fd2cc118400
+[debug] [35m[ADB][39m Setting device id to 42006fd2cc118400
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 shell getprop ro.build.version.sdk'[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 shell ps'
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 shell am force-stop io.appium.uiautomator2.server'[debug] [35m[ADB][39m Checking app cert for /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.8.0.apk
+[info] [35m[ADB][39m Using apksigner from /home/teko/Android/Sdk/build-tools/28.0.3/apksigner
+[debug] [35m[ADB][39m Starting '/home/teko/Android/Sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.8.0.apk"]'[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m '/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.8.0.apk' is already signed.
+[debug] [35m[ADB][39m Checking app cert for /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting '/home/teko/Android/Sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: CN=Android Debug, O=Android, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: 3e4f2ab66d641bbbd363421151755f8b12b66ea37a5db43c52116596b7392a8e
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: e24fc8971c0aad07d1df6cc62af7fb0d48b45b60
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: 5623d53469c7f7147b52ace9d09901eb
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m '/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with non-default certificate
+[info] [35m[ADB][39m Checking whether zipalign is present
+[info] [35m[ADB][39m Using zipalign from /home/teko/Android/Sdk/build-tools/28.0.3/zipalign
+[debug] [35m[ADB][39m /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already zip-aligned. Doing nothing
+[debug] [35m[ADB][39m Signing '/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' with default cert
+[debug] [35m[ADB][39m Starting '/home/teko/Android/Sdk/build-tools/28.0.3/apksigner' with args '["sign","--key","/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.pk8","--cert","/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.x509.pem","/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'[warn] [35m[ADB][39m Got an error during apksigner execution: Command '/home/teko/Android/Sdk/build-tools/28.0.3/apksigner sign --key /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.pk8 --cert /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.x509.pem /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' exited with code 1
+[warn] [35m[ADB][39m apksigner stderr: Exception in thread "main" java.nio.file.FileSystemException: /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk: Read-only file system
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:447)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:262)
+[warn] [35m[ADB][39m 	at java.nio.file.Files.move(Files.java:1395)
+[warn] [35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:342)
+[warn] [35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
+[warn] [35m[ADB][39m 
+[warn] [35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command '/home/teko/Android/Sdk/build-tools/28.0.3/apksigner sign --key /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.pk8 --cert /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/keys/testkey.x509.pem /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' exited with code 1; StdErr: Exception in thread "main" java.nio.file.FileSystemException: /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk: Read-only file system
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:447)
+[warn] [35m[ADB][39m 	at sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:262)
+[warn] [35m[ADB][39m 	at java.nio.file.Files.move(Files.java:1395)
+[warn] [35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:342)
+[warn] [35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
+[warn] [35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[JSONWP Proxy][39m Matched '/' to command name 'deleteSession'
+[warn] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 shell am force-stop host.exp.exponent'[debug] [35m[ADB][39m Removing forwarded port socket connection: 8200 
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 forward --remove tcp\:8200'
+[debug] [35m[ADB][39m Running '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 forward --remove tcp\:8200'
+[warn] [35m[UiAutomator2][39m Unable to remove port forward 'Error executing adbExec. Original error: 'Command '/home/teko/Android/Sdk/platform-tools/adb -P 5037 -s 42006fd2cc118400 forward --remove tcp\:8200' exited with code 1'; Stderr: 'error: listener 'tcp:8200' not found'; Code: '1''
+[debug] [35m[ADB][39m Device API level: 22
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1545359134530 (09:25:34 GMT+0700 (+07))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: Could not sign with default certificate. Original error Command '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/jars/sign.jar /tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk --override' exited with code 1
+[debug] [35m[MJSONWP][39m     at ADB.apkSigningMethods.signWithDefaultCert (/tmp/.mount_appiumuiPwCs/resources/app/node_modules/appium-adb/lib/tools/apk-signing.js:124:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m3053 ms - 490[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m3 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m
